@@ -2,13 +2,14 @@ mapboxgl.accessToken = "pk.eyJ1IjoibmFuNm9rIiwiYSI6ImNtazB2bTYxMTdhNnkzZHB1cXN4b
 
 const map = new mapboxgl.Map({
   container: "map",
-  style: "mapbox://styles/mapbox/light-v11",
-  center: [114.1694, 22.3193], // 香港
+  style: "mapbox://styles/mapbox/streets-v12",
+  center: [114.1694, 22.3193],
   zoom: 11.8,
   pitch: 65,
   bearing: -20,
   antialias: true,
 });
+
 
 map.on("load", () => {
   // === 啟用 3D 地形 ===
